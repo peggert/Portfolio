@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family: 'Quicksand', sans-serif;
+	color: #ffffff;
+	background-color: #3c3d41;
+	font-size: 16px;
+	margin: 0px;	
+}
+
+h1 {
+	font-weight: 100;
+	margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+#textDecoration {
+	text-decoration: none;
+	color: inherit;
+}
+	
+.header {
+	width: 100%;
+	height: 70px; 
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+	overflow: hidden;
+    position: fixed; 
+    top: 0;
+	list-style: none;
+	margin: 25px 0 25px 25%; 
+	padding: 0;
+	display: inline-flex;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 0px 60px;
+    text-decoration: none;
+}
+
+.back_to_work_button {
+  color: #f2f2f2;
+  float: left;
+  font-style: normal;
+  height: 100%;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 175px;
+}
+
+.back_to_work_button p{
+	margin: 10px;
+}
+
+
+/*Underline about*/
+.widthAbout::before {
+	width: 44px;
+}
+
+/*Underline Work*/
+.widthWork::before {
+	width: 37px;
+}
+
+/*Underline Work*/
+.widthContact::before {
+	width: 56px;
+}
+
+.undeline::before {
+	content: "";
+	position: absolute;
+	/*width: 100%;*/
+	height: 1px;
+	bottom: 0;
+	background-color: #fff;
+	visibility: hidden;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-o-transform: scaleX(0);
+	transform: scaleX(0);
+}
+
+.undeline:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+
+.navbar li {
+	color: #333;
+}
+
+.thumbnail
+{
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/header/peggert-logo.png);
+	background-size: contain;
+	margin-top: 10px;
+	padding: 0;
+	float: left;
+}
+
+
+.socialCorner{
+	width: 27px;
+	height: 27px;
+	background-size: contain;
+	margin: 22px;
+	padding: 0;
+	float: right;
+}
+
+.facebookPage {
+	background-image: url(../img/header/facebookPage.png);
+}
+
+.facebookPage:hover {
+	background-image: url(../img/header/facebookPageBlue.png);
+}
+
+.linkedInPage {
+	background-image: url(../img/header/linkedInPage.png);
+}
+
+.linkedInPage:hover {
+	background-image: url(../img/header/linkedInPageBlue.png);
+}
+
+.xingPage {
+	background-image: url(../img/header/xingPage.png);
+}
+
+.xingPage:hover {
+	background-image: url(../img/header/xingPageBlue.png);
+}
+
+.backButton {
+  background-image: url("../img/ProjectPage/back_button.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  margin: 10px;
+  width: 50px;
+}
+
+.content{
+	left: 0 ;
+	width: 100%;
+	margin-top: 70px;
+}
+
+.content_sides {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  width: 5%;
+}
+
+.content_left {
+  background-color: #000;
+  left: 0;
+  transition: background-color 1s ease 0s;
+}
+
+.content_left:hover {
+  background-color: #4e79c4;
+  transition: background-color 1s ease 0s;
+}
+
+.content_middle {
+  float: left;
+  padding: 0 5%;
+  width: 90%;
+}
+
+.content_right {
+  background-color: #000;
+  right: 0;
+  transition: background-color 1s ease 0s;
+}
+
+.content_right:hover {
+  background-color: #4e79c4;
+  transition: background-color 1s ease 0s;
+}
+
+.navagationButton {
+  align-self: center;
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+}
+
+.leftButton {
+	background-image: url(../img/ProjectPage/caret-left.png);
+}
+
+.rightButton {
+	background-image: url(../img/ProjectPage/caret-right.png);
+}
+
+.mainContainer {
+  height: 200px;
+  margin: 50px auto;
+  width: 80%;
+}
+
+.coverImage {
+	background-image: url(../img/ProjectPage/tomtom_cover.jpg);
+	background-size: cover;
+	height: 300px;
+}
+
+.coverText {
+  height: 50px;
+  line-height: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "raleway",sans-serif;
+  font-size: 50px;
+}
+
+.coverMainContainer {
+  margin-top: -91px;
+}
+
+#defining_research {
+	width: 400px;
+	display: flex;
+	float: right;
+	margin: 30px 0 30px 30px;
+}
+
+.concepts {
+  display: flex;
+  float: left;
+  margin: 30px 30px 40px 0;
+  width: 620px;
+}
+
+.wrapper {
+	clear: both;
