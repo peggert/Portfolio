@@ -1,67 +1,78 @@
 @charset "utf-8";
+
 /* CSS Document */
 
-body{
+body
+{
 	font-family: 'Quicksand', sans-serif;
 	color: #ffffff;
 	background-color: #3c3d41;
 	font-size: 16px;
-	margin: 0px;	
+	margin: 0px;
 }
 
-h1 {
+h1
+{
 	font-weight: 100;
 }
 
-#textDecoration {
+#textDecoration
+{
 	text-decoration: none;
 	color: inherit;
 }
-	
-.header {
+
+.header
+{
 	width: 100%;
-	height: 70px; 
+	height: 70px;
 	position: fixed;
 	left: 0;
 	top: 0;
 	background: rgba(0, 0, 0, 0.5);
 }
 
-.navbar {
+.navbar
+{
 	overflow: hidden;
-    position: fixed; 
-    top: 0;
+	position: fixed;
+	top: 0;
 	list-style: none;
-	margin: 25px 0 25px 25%; 
+	margin: 25px 0 25px 25%;
 	padding: 0;
 	display: inline-flex;
 }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    margin: 0px 60px;
-    text-decoration: none;
+.navbar a
+{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	margin: 0px 60px;
+	text-decoration: none;
 }
 
 /*Underline about*/
-.widthAbout::before {
+.widthAbout::before
+{
 	width: 44px;
 }
 
 /*Underline Work*/
-.widthWork::before {
+.widthWork::before
+{
 	width: 37px;
 }
 
 /*Underline Work*/
-.widthContact::before {
+.widthContact::before
+{
 	width: 56px;
 }
 
-.undeline::before {
+.undeline::before
+{
 	content: "";
 	position: absolute;
 	/*width: 100%;*/
@@ -79,14 +90,15 @@ h1 {
 	transform: scaleX(0);
 }
 
-.undeline:hover:before {
+.undeline:hover:before
+{
 	visibility: visible;
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
 }
 
-
-.navbar li {
+.navbar li
+{
 	color: #333;
 }
 
@@ -101,8 +113,8 @@ h1 {
 	float: left;
 }
 
-
-.socialCorner{
+.socialCorner
+{
 	width: 27px;
 	height: 27px;
 	background-size: contain;
@@ -111,35 +123,44 @@ h1 {
 	float: right;
 }
 
-.facebookPage {
+.facebookPage
+{
 	background-image: url(../img/header/facebookPage.png);
 }
 
-.facebookPage:hover {
+.facebookPage:hover
+{
 	background-image: url(../img/header/facebookPageBlue.png);
 }
 
-.linkedInPage {
+.linkedInPage
+{
 	background-image: url(../img/header/linkedInPage.png);
 }
 
-.linkedInPage:hover {
+.linkedInPage:hover
+{
 	background-image: url(../img/header/linkedInPageBlue.png);
 }
 
-.xingPage {
+.xingPage
+{
 	background-image: url(../img/header/xingPage.png);
 }
 
-.xingPage:hover {
+.xingPage:hover
+{
 	background-image: url(../img/header/xingPageBlue.png);
 }
 
-.content{
-	left: 0 ;
+.content
+{
+	left: 0;
 	width: 100%;
 }
-.banner {
+
+.banner
+{
 	background-image: url(../img/main/banner.jpg);
 	width: 100%;
 	height: 950px;
@@ -150,81 +171,94 @@ h1 {
 	top: 0;
 }
 
-.container {
+.container
+{
 	width: 960px;
 	margin: 0 auto;
 	padding: 0;
 	overflow: hidden;
 }
 
-.intro {
+.intro
+{
 	margin: 21% 5% 0 59%;
 }
 
 /*Intro */
 
-.author-name {
+.author-name
+{
 	margin-bottom: 5px;
 	font-size: 33px;
 	letter-spacing: 2px;
 	margin-bottom: 5px;
-	font-family: "Yellowtail",cursive;
+	font-family: "Yellowtail", cursive;
 	font-weight: 100;
 }
 
-.animated {
+.animated
+{
 	-webkit-animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 }
 
-.fadeIn {
+.fadeIn
+{
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
 }
 
-
-#siteTitle {
+#siteTitle
+{
 	margin-top: 5px;
 	font-weight: 200;
 }
 
-.mainContainer {
+.mainContainer
+{
 	margin: 0 60px;
 }
 
-.sectionTitle {
+.sectionTitle
+{
 	text-align: center;
-	font-family: "raleway",sans-serif;
-    font-size: 50px;
+	font-family: "raleway", sans-serif;
+	font-size: 50px;
 }
 
-.sectionSubtitle {
-  color: #999;
-  font-weight: 100;
-  text-align: center;
+.sectionSubtitle
+{
+	color: #999;
+	font-weight: 100;
+	text-align: center;
 }
 
-.about {
+.about
+{
 	margin: 0 15%;
-    padding-top: 70px;
+	padding-top: 70px;
 }
 
-.leftContainer {
+.leftContainer
+{
 	float: left;
 	width: 50%;
 	display: table;
-	height: 250px;	
+	height: 250px;
 }
 
-.leftContainer p {
+.leftContainer p
+{
 	display: table-cell;
 	margin: 0;
 	vertical-align: middle;
 	text-align: justify;
 	padding: 30px;
 }
-.rightContainer {
+
+.rightContainer
+{
 	float: left;
 	width: 40%;
 	height: 250px;
@@ -232,39 +266,44 @@ h1 {
 	text-align: center;
 }
 
-#aboutImage {
-  border-radius: 100%;
-  width: 200px;
-  vertical-align: middle;
-  float: right;
+#aboutImage
+{
+	border-radius: 100%;
+	width: 200px;
+	vertical-align: middle;
+	float: right;
 }
 
-.centrifuge{
+.centrifuge
+{
 	vertical-align: middle;
 	display: inline-block;
 }
 
-.resumeButton {
-    background-color: #4E79C4;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+.resumeButton
+{
+	background-color: #4E79C4;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
 	border-radius: 5px;
 	transition: filter 0.4s ease 0s;
 }
 
-.resumeButton:hover {
+.resumeButton:hover
+{
 	filter: brightness(120%);
 	transition: filter 0.4s ease 0s;
 }
 
-#resumeSection {
+#resumeSection
+{
 	clear:both;
 	width: 200px;
 	display: block;
@@ -273,21 +312,24 @@ h1 {
 	padding-top: 35px;
 }
 
-.workedWith {
+.workedWith
+{
 	height: 100px;
 	margin: 70px auto 100px;
 	width: 67%;
 	text-align: center;
 }
 
-.workedWith > ul {
-  display: inline-flex;
-  height: 100px;
-  list-style: outside none none;
-  padding: 0;
+.workedWith > ul
+{
+	display: inline-flex;
+	height: 100px;
+	list-style: outside none none;
+	padding: 0;
 }
 
-.openZ {
+.openZ
+{
 	background-image: url(../img/main/workedWith/openZ_logo_dark.png);
 	background-size: contain;
 	height: 100%;
@@ -299,51 +341,58 @@ h1 {
 	margin-left: 130px;
 }
 
-.openZ:hover {
+.openZ:hover
+{
 	background-image: url(../img/main/workedWith/openZ_logo.png);
 }
 
-.tomtom {
-  background-image: url("../img/main/workedWith/TomTom_logo_grey.png");
-  background-position-y: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  float: left;
-  height: 100%;
-  margin-left: 0;
-  transition: background-image 0.5s linear 0s;
-  width: 250px;
-  margin-left: 0;
+.tomtom
+{
+	background-image: url("../img/main/workedWith/TomTom_logo_grey.png");
+	background-position-y: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	height: 100%;
+	margin-left: 0;
+	transition: background-image 0.5s linear 0s;
+	width: 250px;
+	margin-left: 0;
 }
 
-.tomtom:hover {
+.tomtom:hover
+{
 	background-image: url(../img/main/workedWith/TomTom_logo.png);
 }
 
-.z3networks {
-  background-image: url("../img/main/workedWith/z3_logo_dark.png");
-  background-position-y: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  float: left;
-  height: 100%;
-  margin-left: 0;
-  transition: background-image 0.5s linear 0s;
-  width: 150px;
-  margin-left: 130px;
+.z3networks
+{
+	background-image: url("../img/main/workedWith/z3_logo_dark.png");
+	background-position-y: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	height: 100%;
+	margin-left: 0;
+	transition: background-image 0.5s linear 0s;
+	width: 150px;
+	margin-left: 130px;
 }
 
-.z3networks:hover {
+.z3networks:hover
+{
 	background-image: url(../img/main/workedWith/z3_logo.png);
 }
 
-.work {
+.work
+{
 	margin-top: 70px;
 	padding-top: 70px;
 	background-color: #25252b;
 }
 
-.recentWork {
+.recentWork
+{
 	list-style-type: none;
 	padding-left: 0;
 	width: 960px;
@@ -351,7 +400,8 @@ h1 {
 	color: #3d3d3d
 }
 
-.project {
+.project
+{
 	width: 900px;
 	background-color: #ffffff;
 	height: 350px;
@@ -359,7 +409,8 @@ h1 {
 	margin: 80px auto 130px;
 }
 
-.rightSection {
+.rightSection
+{
 	float: right;
 	width: 350px;
 	height: 350px;
@@ -369,10 +420,13 @@ h1 {
 	justify-content: center;
 }
 
-.redImage {
+.redImage
+{
 	background-image: url(../img/main/curferProject.png);
 }
-.projectImage {
+
+.projectImage
+{
 	height: 220px;
 	width: 220px;
 	margin: auto;
@@ -380,7 +434,8 @@ h1 {
 	background-size: cover;
 }
 
-.leftSection {
+.leftSection
+{
 	float: left;
 	width: 350px;
 	height: 350px;
@@ -391,40 +446,49 @@ h1 {
 	justify-content: center;
 }
 
-.themeYellow {
+.themeYellow
+{
 	background-color: #e5c35b;
 }
 
-.yellowImage {
+.yellowImage
+{
 	background-image: url(../img/main/foodSroreRedesign.jpg);
 }
-.projectDescriptionContainer {
+
+.projectDescriptionContainer
+{
 	float: left;
 	width: 550px;
 	height: 350px;
 }
 
-.projectText {
+.projectText
+{
 	float: left;
 }
 
-.projectTitle {
+.projectTitle
+{
 	text-align: center;
 	margin-bottom: 0;
 }
 
-.projectSummary {
+.projectSummary
+{
 	width: 80%;
 	margin: auto;
 	text-align: center;
 	display: flex;
 }
 
-.themeRed {
+.themeRed
+{
 	background-color: #bf524c;
 }
 
-.projectButton {
+.projectButton
+{
 	border: none;
 	color: white;
 	padding: 15px 32px;
@@ -438,71 +502,86 @@ h1 {
 	transition: filter 0.4s ease 0s;
 }
 
-.projectButtonPosition {
+.projectButtonPosition
+{
 	margin: auto;
 	width: 210px;
 	text-align: center;
 }
 
-.projectButton:hover {
-    filter: brightness(120%);
+.projectButton:hover
+{
+	filter: brightness(120%);
 	transition: filter 0.4s ease 0s;
 }
 
-#brSpace {
+#brSpace
+{
 	margin-top: 5px;
 }
 
-.themeGreen {
+.themeGreen
+{
 	background-color: #46af49;
 }
 
-.greenImage {
+.greenImage
+{
 	background-image: url(../img/main/prototypeCover.jpg);
 }
-.workSpace {
+
+.workSpace
+{
 	height: 1px;
 	width: 100%;
 }
 
-.contact {
-    margin-top: 50px;
+.contact
+{
+	margin-top: 50px;
 	height: 450px;
 }
 
-.contactSection {
+.contactSection
+{
 	margin: 0 15%;
-    padding-top: 70px;
+	padding-top: 70px;
 }
 
-.contactForm {
-    float: left;
-    width: 45%;
+.contactForm
+{
+	float: left;
+	width: 45%;
 }
 
-#mailMeForm {
+#mailMeForm
+{
 }
 
-#name {
-    border-style: unset;
-    padding: 10px;
-	width: 250px;
-	border-radius: 5px;
-}
-
-#name:focus {
-    background: #d9e3f4 none repeat scroll 0 0;
-}
-
-#email {
+#name
+{
 	border-style: unset;
 	padding: 10px;
 	width: 250px;
 	border-radius: 5px;
 }
 
-#email:focus {
-    background: #d9e3f4 none repeat scroll 0 0;
+#name:focus
+{
+	background: #d9e3f4 none repeat scroll 0 0;
+}
+
+#email
+{
+	border-style: unset;
+	padding: 10px;
+	width: 250px;
+	border-radius: 5px;
+}
+
+#email:focus
+{
+	background: #d9e3f4 none repeat scroll 0 0;
 }
 
 /*#comments:hover {
@@ -511,27 +590,30 @@ h1 {
 	transition: width 2s;
 }*/
 
-#comments:focus {
-    background: #d9e3f4 none repeat scroll 0 0;
+#comments:focus
+{
+	background: #d9e3f4 none repeat scroll 0 0;
 	width: 400px;
-		-webkit-transition: width 2s;
+	-webkit-transition: width 2s;
 	transition: width 2s
 }
 
-#comments {
-    border: medium none;
-    font-family: quicksand;
-    font-size: 14px;
-    height: 120px;
-    padding: 10px;
-    resize: none;
-    width: 250px;
+#comments
+{
+	border: medium none;
+	font-family: quicksand;
+	font-size: 14px;
+	height: 120px;
+	padding: 10px;
+	resize: none;
+	width: 250px;
 	border-radius: 5px;
 	-webkit-transition: width 2s;
 	transition: width 2s;
 }
 
-#submit {
+#submit
+{
 	background-color: #4e79c4;
 	border-radius: 5px;
 	color: white;
@@ -547,143 +629,162 @@ h1 {
 	transition: filter 0.4s ease 0s;
 }
 
-#submit:hover {
-    filter: brightness(120%);
+#submit:hover
+{
+	filter: brightness(120%);
 	transition: filter 0.4s ease 0s;
 }
 
-.googleMaps {
+.googleMaps
+{
 	height: 400px;
 	border: none;
 }
 
-.contactInformation {
-  background-color: #25252b;
-  float: right;
-  height: 345px;
-  width: 45%;
-  border-radius: 5px;
+.contactInformation
+{
+	background-color: #25252b;
+	float: right;
+	height: 345px;
+	width: 45%;
+	border-radius: 5px;
 }
 
-
-.contactInformation h3 {
-    text-align: center;
+.contactInformation h3
+{
+	text-align: center;
 	margin-bottom: 30px;
 }
 
-.contactTable {
+.contactTable
+{
 	margin: auto;
 }
 
-.contactTable td {
+.contactTable td
+{
 	padding: 0 30px 30px;
 }
 
-.place {
+.place
+{
 	background-image: url(../img/contactForm/place.png);
 	background-size: contain;
 	height: 30px;
 	width: 30px;
 }
 
-.whatsapp {
+.whatsapp
+{
 	background-image:url(../img/contactForm/whatsapp.png);
 	background-size: contain;
 	height: 30px;
 	width: 30px;
 }
 
-.mail {
+.mail
+{
 	background-image: url(../img/contactForm/mail.png);
 	background-size: contain;
 	height: 30px;
 	width: 30px;
 }
 
-.name {
+.name
+{
 	background-image:url(../img/contactForm/name.png);
 	background-size: contain;
 	height: 30px;
 	width: 30px;
 }
 
-footer {
-    background-color: #2b2b2b;
-    clear: both;
+footer
+{
+	background-color: #2b2b2b;
+	clear: both;
 	padding: 30px;
 }
 
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+.modal
+{
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+.modal-content
+{
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
 }
 
 /* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.close
+{
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-	
-#mailMeForm {
-  color: #4e79c4;
-  font-size: 20px;
-  font-weight: 900;
+.close:hover, .close:focus
+{
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
 
-.footer_logo {
+#mailMeForm
+{
+	color: #4e79c4;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+.footer_logo
+{
 	background-image:url(../img/header/peggert-logo.png);
 	height: 70px;
 	width: 70px;
-	background-size: contain; 
+	background-size: contain;
 	margin: auto;
 }
 
-.socialCornerFooter {
-  background-size: contain;
-  display: inline-block;
-  height: 30px;
-  margin: 0 20px;
-  width: 30px;
+.socialCornerFooter
+{
+	background-size: contain;
+	display: inline-block;
+	height: 30px;
+	margin: 0 20px;
+	width: 30px;
 }
 
-.socialFooter {
-  margin: 25px auto;
-  width: 100%;
-  text-align: center;
+.socialFooter
+{
+	margin: 25px auto;
+	width: 100%;
+	text-align: center;
 }
 
-.textDecoration {
+.textDecoration
+{
 	text-decoration: none;
 	color: #fff;
 }
 
-.impressumLink {
-  margin-top: 20px;
+.impressumLink
+{
+	margin-top: 20px;
 }
