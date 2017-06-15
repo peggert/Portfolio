@@ -1,0 +1,429 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>UX Designer Philipp Eggert</title>
+
+<!-- Stylesheet/s -->
+<link rel="stylesheet" title="Für Browservorschau deaktiviert: ../styles/projectStyle.css" type="text/css">
+<style type="text/css">
+
+
+/* CSS Document */
+
+body{
+	font-family: 'Quicksand', sans-serif;
+	color: #ffffff;
+	background-color: #3c3d41;
+	font-size: 16px;
+	margin: 0px;	
+}
+
+h1 {
+	font-weight: 100;
+	margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+#textDecoration {
+	text-decoration: none;
+	color: inherit;
+}
+	
+.header {
+	width: 100%;
+	height: 70px; 
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+	overflow: hidden;
+    position: fixed; 
+    top: 0;
+	list-style: none;
+	margin: 25px 0 25px 25%; 
+	padding: 0;
+	display: inline-flex;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 0px 60px;
+    text-decoration: none;
+}
+
+.back_to_work_button {
+  color: #f2f2f2;
+  float: left;
+  font-style: normal;
+  height: 100%;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 175px;
+}
+
+.back_to_work_button p{
+	margin: 10px;
+}
+
+
+/*Underline about*/
+.widthAbout::before {
+	width: 44px;
+}
+
+/*Underline Work*/
+.widthWork::before {
+	width: 37px;
+}
+
+/*Underline Work*/
+.widthContact::before {
+	width: 56px;
+}
+
+.undeline::before {
+	content: "";
+	position: absolute;
+	/*width: 100%;*/
+	height: 1px;
+	bottom: 0;
+	background-color: #fff;
+	visibility: hidden;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-o-transform: scaleX(0);
+	transform: scaleX(0);
+}
+
+.undeline:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+
+.navbar li {
+	color: #333;
+}
+
+.thumbnail
+{
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/header/peggert-logo.png);
+	background-size: contain;
+	margin-top: 10px;
+	padding: 0;
+	float: left;
+}
+
+
+.socialCorner{
+	width: 27px;
+	height: 27px;
+	background-size: contain;
+	margin: 22px;
+	padding: 0;
+	float: right;
+}
+
+.facebookPage {
+	background-image: url(../img/header/facebookPage.png);
+}
+
+.facebookPage:hover {
+	background-image: url(../img/header/facebookPageBlue.png);
+}
+
+.linkedInPage {
+	background-image: url(../img/header/linkedInPage.png);
+}
+
+.linkedInPage:hover {
+	background-image: url(../img/header/linkedInPageBlue.png);
+}
+
+.xingPage {
+	background-image: url(../img/header/xingPage.png);
+}
+
+.xingPage:hover {
+	background-image: url(../img/header/xingPageBlue.png);
+}
+
+.backButton {
+  background-image: url("../img/ProjectPage/back_button.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  margin: 10px;
+  width: 50px;
+}
+
+.content{
+	left: 0 ;
+	width: 100%;
+	margin-top: 70px;
+}
+
+.content_sides {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  width: 5%;
+}
+
+.content_left {
+  background-color: #000;
+  left: 0;
+  transition: background-color 1s ease 0s;
+}
+
+.content_left:hover {
+  background-color: #4e79c4;
+  transition: background-color 1s ease 0s;
+}
+
+.content_middle {
+  float: left;
+  padding: 0 5%;
+  width: 90%;
+}
+
+.content_right {
+  background-color: #000;
+  right: 0;
+  transition: background-color 1s ease 0s;
+}
+
+.content_right:hover {
+  background-color: #4e79c4;
+  transition: background-color 1s ease 0s;
+}
+
+.navagationButton {
+  align-self: center;
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+}
+
+.leftButton {
+	background-image: url(../img/ProjectPage/caret-left.png);
+}
+
+.rightButton {
+	background-image: url(../img/ProjectPage/caret-right.png);
+}
+
+.mainContainer {
+  height: 200px;
+  margin: 50px auto;
+  width: 80%;
+}
+
+.coverImage {
+	background-image: url(../img/ProjectPage/tomtom_cover.jpg);
+	background-size: cover;
+	height: 300px;
+}
+
+.coverText {
+  height: 50px;
+  line-height: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "raleway",sans-serif;
+  font-size: 50px;
+}
+
+.coverMainContainer {
+  margin-top: -91px;
+}
+
+#defining_research {
+	width: 400px;
+	display: flex;
+	float: right;
+	margin: 30px 0 30px 30px;
+}
+
+.concepts {
+  display: flex;
+  float: left;
+  margin: 30px 30px 40px 0;
+  width: 620px;
+}
+
+.wrapper {
+	clear: both;
+}
+
+footer
+{
+	background-color: #2b2b2b;
+	clear: both;
+	padding: 30px;
+}
+
+.footer_logo
+{
+	background-image:url(../img/header/peggert-logo.png);
+	height: 70px;
+	width: 70px;
+	background-size: contain;
+	margin: auto;
+}
+
+.socialCornerFooter
+{
+	background-size: contain;
+	display: inline-block;
+	height: 30px;
+	margin: 0 20px;
+	width: 30px;
+}
+
+.socialFooter
+{
+	margin: 25px auto;
+	width: 100%;
+	text-align: center;
+}
+
+.textDecoration
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+.impressumLink
+{
+	margin-top: 20px;
+}
+
+
+</style>
+
+<!-- Fonts -->
+<link rel="stylesheet" title="Für Browservorschau deaktiviert: https://fonts.googleapis.com/css?family=Lato|Quicksand|Raleway|Yellowtail">
+<style type="text/css">
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v6/sKd0EMYPAh5PYCRKSryvW6CWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/bIcY3_3JNqUVRAQQRNVteQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yellowtail'), url(https://fonts.gstatic.com/s/yellowtail/v6/GcIHC9QEwVkrA19LJU1qlC3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+
+
+</style>
+</head>
+
+<body>
+<header class="header"> <a href="Main.html#jumpWork">
+  <div class="back_to_work_button">
+    <div class="backButton"></div>
+  </div>
+  </a> 
+  <!-- Fixed naviagtion Bar --> 
+  <a href="https://www.facebook.com/peggertsblog" target="_blank">
+  <div class="socialCorner facebookPage"></div>
+  </a> <a href="https://www.linkedin.com/in/philipp-eggert-a92b3bba/" target="_blank">
+  <div class="socialCorner linkedInPage"></div>
+  </a> <a href="https://www.xing.com/profile/Philipp_Eggert7" target="_blank">
+  <div class="socialCorner xingPage"></div>
+  </a> </header>
+<main class="content"> <a href="project-tomtom-curfer.html">
+  <div class="content_sides content_left">
+    <div class="navagationButton leftButton"></div>
+  </div>
+  </a>
+  <div class="content_middle">
+    <div class="coverMainContainer">
+      <div class="coverImage">
+        <div class="coverText">
+          <h1>TomTom Curfer</h1>
+        </div>
+      </div>
+    </div>
+    <!-- COVER IMAGE -->
+    <div class="mainContainer">
+      <p> The following design report is the result of a university project in cooperation with TomTom. The report emerges from research done on sharing in regards to the "curfer". The following design report concentrates on two major insights of this research. It focuses on how sharing data, can be personalised and made more intriguing for the ones the content is shared with. Furthermore, the report will explore design possibilities of live sharing and live updating in relation to the "curfer". </p>
+      <br>
+      <figure id="defining_research"><img src="../img/ProjectPage/defining_research.jpg"> </figure>
+      <h2>Define phase</h2>
+      <p>The research brought up a lot of data. To filter the information gathered, the points that were mentioned repeatedly and seemed most important to the explored target group. I defined three major insights using the following filtering process: First I formulated questions on post-it notes which I answered using the data gathered in research. From the specific insights from the research I created general themes and topics such as "competitiveness" and "opinions". I listed the data I gathered on the left side of the whiteboard and formed insights out of it, on the right side of the whiteboard. This helped me to create a clear connection between the research and participants opinions and the insights. From the directly linked insights gathered on the right side of the board I formed main insights which became my focus during the diverging phase. </p>
+      <h2>Converging phase I</h2>
+      <p>Since there was a wide span of ideas which were both diverge but also linked to one another I tried to further explore the ones that had interesting links to each other and showed the greatest potentials as well as most support in research. Referring back to the research helped me to narrow down all the explored ideas to 3 main concepts that were genuinely different from each other. <br>
+        <br>
+        My first concept was called "Trip progress & Live Update/stats"</p>
+      <br>
+      <br>
+      <b> I created the following poster to illustrate the concept: </b>
+      <figure class="concepts"><img src="../img/ProjectPage/concept_1.png"></figure>
+      <br>
+      <br>
+      <p> The concept's idea is to enable the user to share his current status with close friends and his family. This concept however can still develop in a direction less concerned with the safety status and more focused on sharing live statistics with others. </p>
+      <p class="wrapper">The second concept is called "Live challenges & competitions"</p>
+      <figure class="concepts"><img src="../img/ProjectPage/concept_2.png"></figure>
+      <br>
+      <p> This concept arose from the degree of competitiveness visible in the research. This functionality would enable users to compete live against each other and challenge other drivers in different areas of their driving (see above flower diagram). </p>
+      <p class="wrapper">This concept is closely linked to leaderboards which is why I explored this topic in connection with this concept.</p>
+      <figure class="concepts"><img src="../img/ProjectPage/concept_2_1.png"></figure>
+      <p class="wrapper">The last and following topic arose from all themes that had to do with personalising shared content and other sharing options, thus the name of the third concept is; "Personalise sharing & content". </p>
+      <figure class="concepts"><img src="../img/ProjectPage/concept_3.png"></figure>
+    </div>
+  </div>
+  <a href="project-tomtom-curfer.html">
+  <div class="content_sides content_right">
+    <div class="navagationButton rightButton"></div>
+  </div>
+  </a> </main>
+<footer>
+  <div class="footer_logo"></div>
+  <div class="socialFooter"> <a href="https://www.facebook.com/peggertsblog"target="_blank">
+    <div class="socialCornerFooter facebookPage"></div>
+    </a> <a href="https://www.linkedin.com/in/philipp-eggert-a92b3bba/"target="_blank">
+    <div class="socialCornerFooter linkedInPage"></div>
+    </a> <a href="https://www.xing.com/profile/Philipp_Eggert7"target="_blank">
+    <div class="socialCornerFooter xingPage"></div>
+    </a>
+    <div class="impressumLink"> <a class="textDecoration" href="#">Impressum</a> • <a class="textDecoration" href="#">Home</a> </div>
+  </div>
+</footer>
+</body>
+</html>

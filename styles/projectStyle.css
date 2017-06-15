@@ -253,6 +253,11 @@ figure {
 	margin: 30px 0 30px 30px;
 }
 
+#defining_research > img {
+	width: inherit;
+    height: 100%;
+}
+
 .concepts {
   display: flex;
   float: left;
@@ -260,5 +265,54 @@ figure {
   width: 620px;
 }
 
+.concepts > img {
+	width: inherit;
+    height: 100%;
+}
+
 .wrapper {
 	clear: both;
+}
+
+footer
+{
+	background-color: #2b2b2b;
+	clear: both;
+	padding: 30px;
+}
+
+.footer_logo
+{
+	background-image:url(../img/header/peggert-logo.png);
+	height: 70px;
+	width: 70px;
+	background-size: contain;
+	margin: auto;
+}
+
+.socialCornerFooter
+{
+	background-size: contain;
+	display: inline-block;
+	height: 30px;
+	margin: 0 20px;
+	width: 30px;
+}
+
+.socialFooter
+{
+	margin: 25px auto;
+	width: 100%;
+	text-align: center;
+}
+
+.textDecoration
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+.impressumLink
+{
+	margin-top: 20px;
+}
